@@ -1,0 +1,7 @@
+def adjacentElementsProduct(inputArray):
+    zero = 0
+    result = []
+    while zero < len(inputArray) - 1 :
+        result = result + [inputArray[zero]*inputArray[zero+1]]
+        zero = zero + 1
+    return max(result)
