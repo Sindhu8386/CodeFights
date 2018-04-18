@@ -1,0 +1,8 @@
+def makeArrayConsecutive2(statues):
+    a = sorted(statues)
+    value = a[0]
+    result = []
+    while value <= a[-1] :
+        result = result + [value]
+        value = value + 1
+    return len(result)-len(a)
