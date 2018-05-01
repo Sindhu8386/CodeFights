@@ -1,0 +1,7 @@
+def shapeArea(n):
+ mlen = ((n*2)-1) "maximum length"
+ result = []
+ while mlen > 0 : "subtract two from the maximun until the value reaches zero"
+  result = result + [mlen]
+  mlen = mlen - 2
+ return (sum(result)*2 - ((n*2)-1))
